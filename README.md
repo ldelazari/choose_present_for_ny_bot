@@ -22,6 +22,9 @@ git clone https://github.com/ldelazari/choose_present_for_ny_bot.git
 cd choose_present_for_ny_bot
 ```
 
+### Настройка токена
+В строке ```TOKEN = 'ENTER_YOUR_BOT_TOKEN'``` вставьте токен вашего телеграм бота.
+
 ### Конфигурация базы данных
 Создайте базу данных PostgreSQL и настройте параметры подключения в файле `main.py`:
 ```python
@@ -64,9 +67,8 @@ docker-compose up --build
 ```
 
 ## Настройка переменных окружения
-Создайте файл `.env` и добавьте:
+Вставьте в файл `.env` необходимые данные:
 ```bash
-TOKEN=ВАШ_TELEGRAM_ТОКЕН
 DB_HOST=db
 DB_NAME=your_db
 DB_USER=your_user
